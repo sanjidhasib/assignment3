@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'common-color': '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <style>
+            .font-manrope{
+                font-family: 'Manrope';
+            }
+        </style>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 lg:gap-x-10">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16 " />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] lg:p-2 shadow bg-base-100 rounded-box text-base text-base">
+                            <li class="bg-[#FF4240]"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl font-bold">Hockey<span class="text-[#FF4240]">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex lg:gap-x-11 gap-x-1">
+                    <ul class="menu menu-horizontal lg:px-1 text-base">
+                        <li class="text-[#FF4240]"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap:2 lg:gap-6">
+                    <img src="Images/Frame.png" alt="">
+                    <a class="btn text-white bg-[#FF4240] px-6 py-4">Button</a>
+                </div>
+            </div>
+        </nav>
+            <!-- banner section -->
+            <div class=" mt-10 mx-5 my-5">
+           <!-- <div class="absolute"> -->
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full h-[200px] lg:h-[550px] lg:w-full" />
+                    <div class="absolute  gap-2 lg:gap-4 translate-x-full bottom-1 lg:absolute lg:flex lg:justify-start lg:-left-10">
+                        <a href="#slide4" class="btn bg-black btn-circle"><span class="text-white p-2"><</span></a>
+                        <a href="#slide2" class="btn bg-black btn-circle"><span class="text-white">></span></a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img class="w-full h-[200px] rounded-2xl lg:h-[550px] lg:w-full" src="https://th.bing.com/th/id/R.e0adca54af69c3f32856aaf8e5c11d9a?rik=UnEkw%2fkgzNy0wg&pid=ImgRaw&r=0" />
+                    <div
+                        class="absolute  gap-2 lg:gap-4 translate-x-full bottom-1 lg:absolute lg:flex lg:justify-start lg:-left-10">
+                        <a href="#slide1" class="btn bg-black btn-circle"><span class="text-white p-2"><</span></a>
+                        <a href="#slide3" class="btn bg-black btn-circle"><span class="text-white">></span></a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img class="h-[200px] w-full rounded-2xl lg:h-[550px] lg:w-full" src="https://th.bing.com/th/id/R.b2bd35cebcb24aba24bd468923f82a9b?rik=qq%2btHU2zv3Hl7w&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fa0r3Ll4.jpg&ehk=Jtr1%2f6Ea7XSMD9%2bjobpE2snAGVeuqJvF%2bcKaLuDD09w%3d&risl=&pid=ImgRaw&r=0"  />
+            <div
+                class="absolute  gap-2 lg:gap-4 translate-x-full bottom-1 lg:absolute lg:flex lg:justify-start lg:-left-10 ">
+                <a href="#slide2" class="btn bg-black btn-circle"><span class="text-white p-2"><</span></a>
+                <a href="#slide1" class="btn bg-black btn-circle"><span class="text-white">></span></a>
+            </div>
+                </div>
+            </div>
+            <div class=" lg:flex justify-end ">
+                <div class="mt-4 lg:relative bottom-0 card bg-black lg:w-1/3 lg:h- lg:p-8 lg:bottom-[220px] lg:right-[40px] w-auto h-[105] p-4 ">
+                    <h2 class="text-white font-bold text-base">Meet All the heros From the Field</h2>
+                    <p class="text-white text-base pt-2">Discover the formidable lineup of our hockey heroes and dive into the thrilling
+                        world of skill, passion, and triumph on
+                        the field."</p>
+                </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
